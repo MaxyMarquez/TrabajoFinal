@@ -1,14 +1,10 @@
-
 function submitForm(form) {
-    swal({
+    Swal.fire({
         title: 'Mensaje Enviado',
         text: "Gracias por contactarse con nosotros!",
         icon: 'success',
         position: 'center',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
+        confirmButtonColor: 'rgb(255, 166, 0)',
     })
         .then(function (isOkay) {
             if (isOkay) {
