@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+    letter-spacing: 2px;
+}
+
+:root {
+    --main-color: rgb(255, 166, 0);
+    --text-color: rgb(0, 0, 0);
+}
+  
+
+.navbar {
+    background-color: var(--main-color);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 span {
+    color: var(--main-color);
+}
+
+.button {
+    color: var(--main-color);
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid var(--main-color);
+    font-size: 1.4rem;
+}
+
+
+footer {
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.726);
+}
