@@ -20,13 +20,44 @@
     color: var(--text-color);
 }
 
+.navbar-toggler {
+    border: none;
+    font-size: 2rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 .formulario {
     width: 100%;
     height: 100%;
 }
- .formulario h2 {
+
+form {
+    padding: 20px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.336);
+}
+
+.form-control {
+    border: none;
+    border-radius: 0;
+    padding-left: 0px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+.form-floating label {
+    padding-left: 0;
+}
+
+.formulario h2 {
     color: var(--main-color);
- }
+}
 
 .btn {
     background-color: var(--main-color);
@@ -47,17 +78,101 @@
     font-size: 1.1rem;
 }
 
+.tel p{
+    margin: 10px;    
+}
+
+.tel a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 251, 251);
+    z-index: 1;
+    padding: 7px 0;
+}
+
+.tel a:hover{
+    color: black;
+}
+
+.tel a:before {
+    content: "";
+    background: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    animation: .8s no-hover;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+.tel a:hover:before,
+.tel a:focus:before {
+    animation: .4s hover linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hover {
+    0% {
+        transform: scaleX(0);
+        height: 5px;
+    }
+
+    45% {
+        transform: scaleX(1.05);
+        height: 5px;
+    }
+
+    55% {
+        height: 5px;
+    }
+
+    100% {
+        transform: scaleX(1.05);
+        height: 100%;
+    }
+}
+
+@keyframes no-hover {
+    0% {
+        transform: scaleX(1.05);
+        height: 100%;
+    }
+
+    45% {
+        height: 5px;
+    }
+
+    55% {
+        transform: scaleX(1.05);
+        height: 5px;
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleX(0);
+        height: 5px;
+        opacity: .02;
+    }
+}
+
 h2 {
     font-size: 4rem;
 }
 
 footer {
-    height: 150px;
+    width: 100%;
+    height: 200px;
+    color: white;
     background-color: rgba(0, 0, 0, 0.726);
 }
 
-@media screen and (min-width: 1200px){
-    .formulario, .tel {
+@media screen and (min-width: 1200px) {
+
+    .formulario,
+    .tel {
         height: 600px;
     }
 }

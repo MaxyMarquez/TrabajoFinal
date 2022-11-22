@@ -13,20 +13,19 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/contacto.css">
 
-
     <title>Document</title>
 
 </head>
 
 <body>
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><img class="nav-logo" src="../img/logo.png" alt=""
                         width="40"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="bi bi-code-slash"></i>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
@@ -34,10 +33,10 @@
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Link</a>
+                            <a class="nav-link" href="../html/sobre_mi.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="../html/servicios.html">Servicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
@@ -53,34 +52,55 @@
                 <h1 class="p-5 text-center">Contactanos</h1>
                 <div class="row">
                     <div class="col-xl-7" data-aos="fade-right">
-                        <form action="https://formsubmit.co/7537f48c0633bff17e15ffba5f0be81a"  method="POST" onsubmit="return submitForm(this);">
+                        <form action="https://formsubmit.co/7537f48c0633bff17e15ffba5f0be81a" method="POST"
+                            onsubmit="return submitForm(this);">
                             <input type="text" name="_honey" style="display: none;">
                             <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="https://maxymarquez.github.io/TrabajoFinal/html/contacto.html">
+                            <input type="hidden" name="_next"
+                                value="https://maxymarquez.github.io/TrabajoFinal/html/contacto.html">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="Nombre"
+                                            name="Nombre">
+                                        <label for="floatingInput">Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput"
+                                            placeholder="Apellido" name="Apellido">
+                                        <label for="floatingInput">Apellido</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="Email"
+                                            name="Email">
+                                        <label for="floatingInput">Correo Electr&#243;nico</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput"
+                                            placeholder="Telefono" name="Telefono">
+                                        <label for="floatingInput">Tel&#233;fono</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea type="text" class="form-control" id="floatingInput" placeholder="Comentario"
+                                    name="Comentario" style="height: 150px;"></textarea>
+                                <label for="floatingInput">Dejanos tu Consulta...</label>
+                            </div>
                             
-                            <div class="col-md pb-3">
-                                <input type="text" name="Name" class="form-control" placeholder="Nombre" aria-label="First name" required>
-                            </div>
-                            <div class="col-md pb-3">
-                                <input type="text" name="Last Name" class="form-control" placeholder="Apellido" aria-label="Last name" required>
-                            </div>
-                            <div class="col-md pb-3">
-                                <input type="email" name="Email" class="form-control" placeholder="Correo Electronico"
-                                    aria-label="Email Adrress" required>
-                            </div>
-                            <div class="col-md pb-3">
-                                <input type="text" name="Phone" class="form-control" placeholder="Número de Telefono"
-                                    aria-label="Phone Number">
-                            </div>
-                            <div class="col pb-3">
-                                <textarea type="text" name="Message" class="form-control" placeholder="Comentario" aria-label="Comment"
-                                    rows="4" required></textarea>
-                            </div>
-                            <button class="btn btn-primary col-12 mb-5">Enviar</button>
+                            <button class="btn btn-primary col-12  mt-3 mb-3">Enviar</button>
                         </form>
                     </div>
-                    <div class="col-xl-5 pb-3 d-flex align-items-center justify-content-center" data-aos="fade-left">
-                        <h2>¡ESCRIBINOS!</h2>
+                    <div class="h2 col-xl-5 pb-3 d-flex align-items-center justify-content-center text-center" data-aos="fade-left">
+                        <h2> ¿En que te podemos Ayudar? </h2>
                     </div>
                 </div>
             </div>
@@ -95,10 +115,10 @@
                         <div class="row p-5">
                             <div class="col-xl-6 pt-4" data-aos="fade-up">
                                 <h3 class="pb-3">Teléfono</h3>
-                                <p><i class="bi bi-phone"></i> +11 (111) 111 1111</p>
-                                <p><i class="bi bi-phone"></i> +11 (111) 222 2222</p>
-                                <p><i class="bi bi-phone"></i> +11 (111) 333 3333</p>
-                                <p><i class="bi bi-phone"></i> +11 (111) 444 4444</p>
+                                <p><a href=""><i class="bi bi-phone"></i> +11 (111) 111 1111</p></a> 
+                                <p><a href=""><i class="bi bi-phone"></i> +11 (111) 111 1111</p></a> 
+                                <p><a href=""><i class="bi bi-phone"></i> +11 (111) 111 1111</p></a> 
+                                <p><a href=""><i class="bi bi-phone"></i> +11 (111) 111 1111</p></a> 
                             </div>
                             <div class="col-xl-6 pt-4" data-aos="fade-down" d>
                                 <h3 class="pb-3">Dirección</h3>
@@ -109,16 +129,35 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Sobre Nosotors</a></li>
+                        <li><a href="">Nuestros Servicios</a></li>
+                        <li><a href="">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <h2>Seguinos</h2>
+                    <ul>
+                        <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                        <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+                        <li><a href=""><i class="bi bi-whatsapp"></i></a></li>
+                        <li><a href=""><i class="bi bi-envelope-at"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

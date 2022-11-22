@@ -29,26 +29,6 @@
     box-shadow: none;
 }
 
-.main-container {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-h2 span {
-    color: var(--main-color);
-}
-
-.button {
-    color: var(--main-color);
-    border: none;
-    background-color: white;
-    border-bottom: 1px solid var(--main-color);
-    font-size: 1.4rem;
-}
-
-
 footer {
     width: 100%;
     height: 200px;
