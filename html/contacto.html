@@ -2,183 +2,194 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/contacto.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/contacto.css">
 
-    <title>Document</title>
+  <title>Document</title>
 
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="nav-logo" src="../img/logo.png" alt=""
-                        width="40"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-code-slash"></i>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../html/sobre_mi.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../html/servicios.html">Servicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="formulario">
-            <div class="container">
-                <h1 class="p-5 text-center">Contactanos</h1>
-                <div class="row">
-                    <div class="col-xl-7" data-aos="fade-right">
-                        <form action="https://formsubmit.co/7537f48c0633bff17e15ffba5f0be81a" method="POST"
-                            onsubmit="return submitForm(this);">
-                            <input type="text" name="_honey" style="display: none;">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next"
-                                value="https://maxymarquez.github.io/TrabajoFinal/html/contacto.html">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingInput" placeholder="Nombre"
-                                            name="Nombre">
-                                        <label for="floatingInput">Nombre</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingInput"
-                                            placeholder="Apellido" name="Apellido">
-                                        <label for="floatingInput">Apellido</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="floatingInput" placeholder="Email"
-                                            name="Email">
-                                        <label for="floatingInput">Correo Electr&#243;nico</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingInput"
-                                            placeholder="Telefono" name="Telefono">
-                                        <label for="floatingInput">Tel&#233;fono</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <textarea type="text" class="form-control" id="floatingInput" placeholder="Comentario"
-                                    name="Comentario" style="height: 150px;"></textarea>
-                                <label for="floatingInput">Dejanos tu Consulta...</label>
-                            </div>
-                            
-                            <button class="btn btn-primary col-12  mt-3 mb-3">Enviar</button>
-                        </form>
-                    </div>
-                    <div class="h2 col-xl-5 pb-3 d-flex align-items-center justify-content-center text-center" data-aos="fade-left">
-                        <h2> ¿En que te podemos Ayudar? </h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="tel d-flex align-items-center justify-content-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 text-center p-5" data-aos="fade-right">
-                        <h2 class="pt-4">¡Comunicate con Nosotros!</h2>
-                    </div>
-                    <div class=" col-xl-7">
-                        <div class="row p-5">
-                            <div class="col-xl-6 pt-4" data-aos="fade-up">
-                                <h3 class="pb-3">Teléfono</h3>
-                                <p><a href=""><i class="bi bi-phone"></i> +11 (111) 111 1111</p></a> 
-                                <p><a href=""><i class="bi bi-phone"></i> +11 (111) 111 1111</p></a> 
-                                <p><a href=""><i class="bi bi-phone"></i> +11 (111) 111 1111</p></a> 
-                                <p><a href=""><i class="bi bi-phone"></i> +11 (111) 111 1111</p></a> 
-                            </div>
-                            <div class="col-xl-6 pt-4" data-aos="fade-down" d>
-                                <h3 class="pb-3">Dirección</h3>
-                                <p><i class="bi bi-geo-alt"></i> Calle Nº 1111</p>
-                                <p><i class="bi bi-geo-alt"></i> Calle Nº 1111</p>
-                                <p><i class="bi bi-geo-alt"></i> Calle Nº 1111</p>
-                                <p><i class="bi bi-geo-alt"></i> Calle Nº 1111</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <h2>Menu</h2>
-                    <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Sobre Nosotors</a></li>
-                        <li><a href="">Nuestros Servicios</a></li>
-                        <li><a href="">Contactanos</a></li>
-                    </ul>
-                </div>
-                <div class="col-6">
-                    <h2>Seguinos</h2>
-                    <ul>
-                        <li><a href=""><i class="bi bi-instagram"></i></a></li>
-                        <li><a href=""><i class="bi bi-linkedin"></i></a></li>
-                        <li><a href=""><i class="bi bi-whatsapp"></i></a></li>
-                        <li><a href=""><i class="bi bi-envelope-at"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="nav-logo" src="../img/logo.png" alt="" width="40"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-code-slash"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/sobre_mi.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/servicios.html">Servicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-    </footer>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="formulario">
+      <div class="container">
+        <h1 class="p-5 text-center text-white">Contactanos</h1>
+        <div class="row">
+          <div class="col-xl-7" data-aos="fade-right">
+            <form action="https://formsubmit.co/7537f48c0633bff17e15ffba5f0be81a" class="needs-validation" novalidate method="POST" name="formControl" >
+              <input type="text" name="_honey" style="display: none;">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://maxymarquez.github.io/TrabajoFinal/html/contacto.html">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre" name="Nombre"
+                      minlength="3" maxlength="35" pattern="[A-Za-z]*" required>
+                    <label for="floatingInput">Nombre</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Apellido" name="Apellido"
+                      minlength="3" maxlength="35" pattern="[A-Za-z]*" required>
+                    <label for="floatingInput">Apellido</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Email" name="Email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <label for="floatingInput">Correo Electr&#243;nico</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="floatingInput" placeholder="Telefono" name="Telefono">
+                    <label for="floatingInput">Tel&#233;fono(Opcional)</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea type="text" class="form-control" id="floatingInput" placeholder="Comentario" name="Comentario"
+                  style="height: 150px;" required></textarea>
+                <label for="floatingInput">Dejanos tu Consulta...</label>
+              </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-        crossorigin="anonymous"></script>
+              <button class="btn btn-primary col-12  mt-3 mb-3" type="submit" onclick="formValidation()" >Enviar</button>
+            </form>
+          </div>
+          <div class="h2 col-xl-5 pb-3 d-flex align-items-center justify-content-center text-center"
+            data-aos="fade-left">
+            <h2> ¿En que te podemos Ayudar? </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tel d-flex align-items-center justify-content-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 text-center p-5" data-aos="fade-right">
+            <h2 class="pt-4">¡Comunicate con Nosotros!</h2>
+          </div>
+          <div class=" col-xl-7">
+            <div class="row p-5">
+              <div class="col-xl-6 pt-4" data-aos="fade-up">
+                <h3 class="pb-3">Teléfono</h3>
+                <p><a href=""><i class="bi bi-phone"></i> +11 (111) 111 1111</p></a>
+                <p><a href=""><i class="bi bi-phone"></i> +11 (111) 111 1111</p></a>
+                <p><a href=""><i class="bi bi-phone"></i> +11 (111) 111 1111</p></a>
+                <p><a href=""><i class="bi bi-phone"></i> +11 (111) 111 1111</p></a>
+              </div>
+              <div class="col-xl-6 pt-4" data-aos="fade-down" d>
+                <h3 class="pb-3">Dirección</h3>
+                <p><a href=""><i class="bi bi-signpost"></i>Calle Nº 1111</p></a>
+                <p><a href=""><i class="bi bi-signpost"></i>Calle Nº 1111</p></a>
+                <p><a href=""><i class="bi bi-signpost"></i>Calle Nº 1111</p></a>
+                <p><a href=""><i class="bi bi-signpost"></i>Calle Nº 1111</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../js/sweetalert2.all.min.js"></script>
-    <script src="../js/script.js"></script>
-    <script>
-        AOS.init({
-            once: true,
-            startEvent: 'DOMContentLoaded',
-            disable: false,
-            offset: 120,
-            delay: 0,
-            duration: 400
-        });
-    </script>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 menu">
+          <h2>Menu</h2>
+          <ul>
+            <li><i class="bi bi-arrow-right-short"></i><a href="../index.html">Inicio</a></li>
+            <li><i class="bi bi-arrow-right-short"></i><a href="../html/sobre_mi.html">Sobre Nosotors</a></li>
+            <li><i class="bi bi-arrow-right-short"></i><a href="../html/servicios.html">Nuestros Servicios</a></li>
+            <li><i class="bi bi-arrow-right-short"></i><a href="../html/contacto.html">Contactanos</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 menu">
+          <h2>Contacto</h2>
+          <ul>
+            <li><i class="bi bi-envelope"></i><a href="">example@example.com</a></li>
+            <li><i class="bi bi-telephone"></i><a href="">+11 (111) 111 111</a></li>
+            <li><i class="bi bi-telephone"></i><a href="">+11 (111) 111 111</a></li>
+            <li><i class="bi bi-signpost"></i><a href="">Calle Nº 123</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mt-1">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217954.9338907509!2d-64.33443097793783!3d-31.399083972440756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1669679589118!5m2!1ses-419!2sar"
+            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="socialMedia">
+        <ul>
+          <li><a href=""><i class="bi bi-instagram"></i></a></li>
+          <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+          <li><a href=""><i class="bi bi-whatsapp"></i></a></li>
+          <li><a href=""><i class="bi bi-envelope-at"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/sweetalert2.all.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      startEvent: 'DOMContentLoaded',
+      disable: false,
+      offset: 120,
+      delay: 0,
+      duration: 1000
+    });
+  </script>
 </body>
 
 </html>

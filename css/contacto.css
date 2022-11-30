@@ -32,9 +32,15 @@
 .formulario {
     width: 100%;
     height: 100%;
+    background-image: url(https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/web-development-t.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 form {
+    background-color: white;
     padding: 20px 40px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.336);
 }
@@ -164,15 +170,73 @@ h2 {
 
 footer {
     width: 100%;
-    height: 200px;
+    height: 100%;
     color: white;
     background-color: rgba(0, 0, 0, 0.726);
 }
 
+footer i {
+    padding: 0 5px;
+}
+
+ footer h2 {
+    padding-top: 15px;
+    font-size: 1.3rem;
+    text-decoration: underline;
+ }
+
+.menu ul  {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.socialMedia ul  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid white;
+    
+}
+
+.socialMedia ul li {
+    list-style: none;
+    padding: 15px 20px;
+}
+
+.socialMedia ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(255, 253, 253);
+}
+
+.socialMedia ul li a:hover {
+    color: var(--main-color);
+}
+
 @media screen and (min-width: 1200px) {
 
-    .formulario,
-    .tel {
+    .formulario
+    {
         height: 600px;
+    }
+    .tel {
+        height: 400px;
     }
 }
