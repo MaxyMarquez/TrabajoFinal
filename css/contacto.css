@@ -36,7 +36,7 @@
 .formulario {
     width: 100%;
     height: 100%;
-    background-image: url(https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/web-development-t.jpg);
+    background-image: url("../img/web-development-t.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
