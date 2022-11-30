@@ -41,6 +41,10 @@
     justify-content: center;
 }
 
+.main-container h1 span {
+    color: var(--main-color);
+}
+
 p span {
     color: var(--main-color);
 }
