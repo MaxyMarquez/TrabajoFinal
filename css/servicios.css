@@ -85,7 +85,7 @@ footer i {
     align-items: center;
     justify-content: center;
     border-top: 1px solid white;
-    
+    margin-bottom: 0;
 }
 
 .socialMedia ul li {
