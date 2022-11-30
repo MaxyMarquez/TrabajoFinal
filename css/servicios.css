@@ -9,14 +9,25 @@
 }
 
 :root {
-    --main-color: rgb(255, 166, 0);
-    --text-color: rgb(0, 0, 0);
+    --main-color: #204ca8;
+    --text-color: rgb(255, 255, 255);
+}
+h2 {
+    color: #7797dd;
+}
+body {
+    background-color: rgb(53, 53, 53);
+    color: var(--text-color);
 }
   
 .navbar {
     background-color: var(--main-color);
     font-size: 1rem;
     font-weight: 600;
+    color: var(--text-color);
+}
+
+.nav-link {
     color: var(--text-color);
 }
 
@@ -33,7 +44,7 @@ footer {
     width: 100%;
     height: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.726);
+    background-color: rgb(44, 44, 44);
 }
 
 footer i {
@@ -41,6 +52,7 @@ footer i {
 }
 
  footer h2 {
+    color: var(--text-color);
     padding-top: 15px;
     font-size: 1.3rem;
     text-decoration: underline;
@@ -89,4 +101,70 @@ footer i {
 
 .socialMedia ul li a:hover {
     color: var(--main-color);
+}
+
+.card-service {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 20rem;
+    margin: 2px 0;
+    border-top: 1px solid rgba(70, 69, 69, 0.404);
+}
+
+.card-service h2 a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.card-service a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+    .card-service {
+        
+        height: 160px;
+    
+    }
+}
+
+.service-button {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    height: 450px;
+}
+
+.service-button a {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 800;
+    transition: all .6s;
+}
+
+.service-button a p {
+    font-size: 1rem;
+}
+.service-button a:hover {
+    background-color: var(--main-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+.medios-de-pago {
+    background-color: white;
+    height: 100%;
 }
